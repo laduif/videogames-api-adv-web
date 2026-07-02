@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Game</title>
+    </head>
+    <body>
+        <h1>Add a Video Game</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit">Save Game</button>
+        </form>
+    </body>
+</html>
